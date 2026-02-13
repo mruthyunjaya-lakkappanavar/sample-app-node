@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+.env
+test-results.xml
+junit.xml
+*.log
