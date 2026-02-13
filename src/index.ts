@@ -21,6 +21,7 @@ app.get("/api/greet", (req: Request, res: Response) => {
 });
 
 // Only start server if run directly (not imported for tests)
+/* istanbul ignore next */
 if (require.main === module) {
   app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
