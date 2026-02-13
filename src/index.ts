@@ -17,7 +17,7 @@ app.get("/health", (_req: Request, res: Response) => {
 // Greeting endpoint
 app.get("/api/greet", (req: Request, res: Response) => {
   const name = (req.query.name as string) || "World";
-  res.json({ message: `Hello, ${name}!` });
+  res.json({ message: `Hi, ${name}!` });  // Changed Hello → Hi (breaks test)
 });
 
 // Only start server if run directly (not imported for tests)
